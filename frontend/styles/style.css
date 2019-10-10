@@ -1,14 +1,18 @@
 
-.register{
+.register, .login{
   width: 75%;
   margin: auto;
-  height: 93vh;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.register label{
-  margin-top: 15px;
+.register label, .login label{
+  margin-top: 5px;
+}
+
+.login{
+  height: 91.4vh;
 }
