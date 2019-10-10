@@ -27,12 +27,8 @@
 @media screen and (max-width: 720px) {
 .card{
   margin: 40px !important;
-  box-shadow: 5px 10px 8px #f3f3f3;
-  border-radius: 20px;
-}
-
-.card:hover{
-  transform: translate(-20px,0);
+  box-shadow: 2px 4px 7px #a5a5aa;
+  border-radius: 10px;
 }
 }
 
