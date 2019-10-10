@@ -8,4 +8,21 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: multiply !important;
+
+.register, .login{
+  width: 75%;
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.register label, .login label{
+  margin-top: 5px;
+}
+
+.login{
+  height: 91.4vh;
 }
