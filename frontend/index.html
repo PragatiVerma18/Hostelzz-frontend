@@ -8,10 +8,20 @@
     <!-- links -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <style>
+      .index-container{
+        background: url('http://d2ztkj0qcbj8ia.cloudfront.net/wp-content/uploads/sites/57/2019/03/28104839/Hotel_Hotel_Ozz_Nice_by_HappyCulture_Suite_Rooftop_960_6.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .button{
+        border: 1.8px solid white !important;
+      }
+    </style>
 </head>
 <body>
   
-  <div class="" style="height: 100vh; width: 100vw; display: flex; justify-content: space-between; flex-direction: column; background-color: #f3f3f3">
+  <div class="index-container" style="height: 100vh; width: 100vw; display: flex; justify-content: space-between; flex-direction: column; background-color: #f3f3f3">
     <!-- navbar -->
     <nav class="navbar is-info" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
@@ -28,24 +38,24 @@
     
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-end">
-          <a class="navbar-item is-size-5">
+          <a class="navbar-item is-size-5" href="./frontpage.html">
             About
           </a>
     
-          <a class="navbar-item is-size-5">
+          <a class="navbar-item is-size-5" href="./other-pages/explore.html">
             Explore Hostels
           </a>
 
-          <a href="" class="navbar-item is-size-5">
+          <a href="" class="navbar-item is-size-5" href="./frontpage.html">
             Contact
           </a>
 
           <div class="navbar-item is-size-5">
             <div class="buttons">
-              <a class="button is-info is-size-5" href="">
-                <strong>Sign up</strong>
+              <a class="button is-info is-medium" href="./other-pages/register.html">
+                <strong>Register</strong>
               </a>
-              <a class="button is-light">
+              <a class="button is-light is-medium" href="./other-pages/login.html">
                 Log in
               </a>
             </div>
@@ -61,7 +71,7 @@
     <!-- login signup -->
     <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
       <h3 class="title is-2">Where to Stay?</h3>
-      <h3 class="subtitle">We can find it for you</h3>
+      <h3 class="subtitle has-text-weight-bold">We can find it for you...</h3>
       <a href="other-pages/login.html" class="button is-medium is-rounded is-info" style="margin: 5px;">Log In</a>
       <a href="other-pages/register.html" class="button is-info is-medium is-rounded" style="margin: 5px;">Register</a>
       <span style="margin: 15px;">
