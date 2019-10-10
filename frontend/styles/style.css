@@ -27,8 +27,8 @@
 @media screen and (max-width: 720px) {
 .card{
   margin: 40px !important;
-  box-shadow: 5px 10px 8px #f3f3f3;
-  border-radius: 20px;
+  box-shadow: 2px 4px 7px #a5a5aa;
+  border-radius: 10px;
 }
 
 .card:hover{
@@ -50,4 +50,23 @@
 .register label, .login label{
   margin-top: 5px;
 
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 12px !important;
+  padding: 10px !important;
+}
+.description{
+  overflow-x: hidden !important;
+}
+.location{
+  border:  1.5px solid #209cee;
+}
+.list-item{
+  margin-bottom: 30px !important;
+}
+.text{
+  margin: 20px !important;
 }
