@@ -40,13 +40,14 @@
 .register, .login{
   width: 75%;
   margin: auto;
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin-top: 20px;
+}
+
+.register{
+  margin-top: 30px;
 }
 
 .register label, .login label{
   margin-top: 5px;
+
 }
