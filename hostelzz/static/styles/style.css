@@ -1,0 +1,29 @@
+.hero{
+  background-image: url("https://hektorhostels.com/wp-content/uploads/2016/07/Hektor_Design_Hostels_tuba_6le_2.jpg");
+  /* Full height */
+  height: 100vh;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply !important;
+}
+
+.register, .login{
+  width: 75%;
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.register label, .login label{
+  margin-top: 5px;
+}
+
+.login{
+  height: 91.4vh;
+}

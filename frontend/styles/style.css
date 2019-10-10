@@ -10,6 +10,33 @@
   background-blend-mode: multiply !important;
 }
 
+.card-image{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.card-image img{
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+.card{
+  margin: 80px !important;}
+
+@media screen and (max-width: 720px) {
+.card{
+  margin: 40px !important;
+  box-shadow: 5px 10px 8px #f3f3f3;
+  border-radius: 20px;
+}
+
+.card:hover{
+  transform: translate(-20px,0);
+}
+}
+
+
 .register, .login{
   width: 75%;
   margin: auto;
@@ -22,8 +49,5 @@
 
 .register label, .login label{
   margin-top: 5px;
+
 }
-/* 
-.login{
-  height: 84vh;
-} */
