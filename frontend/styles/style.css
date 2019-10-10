@@ -1,0 +1,14 @@
+
+.register{
+  width: 75%;
+  margin: auto;
+  height: 93vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.register label{
+  margin-top: 15px;
+}
