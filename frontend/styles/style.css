@@ -36,6 +36,7 @@
 }
 }
 
+
 .register, .login{
   width: 75%;
   margin: auto;
@@ -48,8 +49,4 @@
 
 .register label, .login label{
   margin-top: 5px;
-}
-
-.login{
-  height: 85vh;
 }
