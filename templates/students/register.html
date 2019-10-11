@@ -1,0 +1,91 @@
+
+{% extends 'base.html' %} 
+
+
+{% block title %} | Register {% endblock %}
+
+
+{% load static %}
+{% block content %}
+
+<div class="register">
+        <h3 class="title is-3">Enter Your Details:</h3>
+        <form action = "{% url 'register'%}" method = "POST">
+        {% csrf_token %}
+        <div class="field">
+            <label class="label">Name</label>
+            <div class="control">
+              <input class="input" name="username" class="form-control" type="text" placeholder="Enter your Name Here...">
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Email</label>
+            <div class="control">
+              <input class="input" name="email" type="email" class="form-control" placeholder="Enter your Email Here...">
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Gender</label>
+            <div class="control">
+              <label class="radio">
+                <input type="radio" value = "Male" class="form-control" name="gender">
+                Male
+              </label>
+              <label class="radio">
+                <input type="radio" value = "Female" class="form-control" name="gender">
+                Female
+              </label>
+            </div>
+          </div>
+
+        <div class="field">
+            <label class="label">State</label>
+            <div class="control">
+              <div class="select">
+                  <input type="hidden" class="form-control" name="state" id="countryId" value="IN"/>
+                  <select name="state" class="states order-alpha" id="stateId">
+                      <option value="">Select State</option>
+                  </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="field">
+              <label class="label">City</label>
+              <div class="control">
+                <div class="select">
+                    <input type="hidden" class="form-control"  name="city">
+                    <select name="city" class="cities order-alpha" id="cityId">
+                        <option value="">Select City</option>
+                    </select>
+                </div>
+              </div>
+            </div>
+
+          <div class="field">
+            <label class="label">Password</label>
+            <div class="control">
+              <input class="input" class="form-control" type="password" name="password" placeholder="Enter password Here...">
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Confirm Password</label>
+            <div class="control">
+              <input class="input" type="password" class="form-control" name="password2" placeholder="Confirm password">
+            </div>
+        </div>
+          
+          <div class="field is-grouped">
+            <div class="control">
+              <input type="submit" value="Register">
+            </div>
+            <div class="control">
+              <button class="button is-dark">Cancel</button>
+            </div>
+          </div>
+          </form>
+    </div>
+{% endblock %}
