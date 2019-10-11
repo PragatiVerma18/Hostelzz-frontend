@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hostelzz</title>
+    <!-- links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <style>
+      body{
+        height: 100vh;
+        background-color: #f3f3f3;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;        
+      }
+    </style>
+</head>
+<body>
+
+   <!-- navbar -->
+   <nav class="navbar is-info" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="../index.html">
+          <h3 class="is-size-4 has-text-weight-medium">Hostelzz</h3>
+        </a>
+    
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+    
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item is-size-5" href="../frontpage.html">
+            About
+          </a>
+    
+          <a class="navbar-item is-size-5" href="./explore.html">
+            Explore Hostels
+          </a>
+
+          <a href="" class="navbar-item is-size-5" href="../frontpage.html">
+            Contact
+          </a>
+
+          <div class="navbar-item is-size-5">
+            <div class="buttons">
+              <a class="button is-info is-medium" href="./register.html">
+                <strong>Register</strong>
+              </a>
+              <a class="button is-light is-medium" href="./login.html">
+                Log in
+              </a>
+            </div>
+          </div>
+    
+
+        </div>
+    
+      </div>
+    </nav>
+    
+    <div class="register">
+        <h3 class="title is-3">Enter Your Details:</h3>
+        <div class="field">
+            <label class="label">Name</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Enter your Name Here...">
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Email</label>
+            <div class="control">
+              <input class="input" type="email" placeholder="Enter your Email Here...">
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Gender</label>
+            <div class="control">
+              <label class="radio">
+                <input type="radio" name="gender">
+                Male
+              </label>
+              <label class="radio">
+                <input type="radio" name="gender">
+                Female
+              </label>
+            </div>
+          </div>
+
+        <div class="field">
+            <label class="label">State</label>
+            <div class="control">
+              <div class="select">
+                  <input type="hidden" name="country" id="countryId" value="IN"/>
+                  <select name="state" class="states order-alpha" id="stateId">
+                      <option value="">Select State</option>
+                  </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="field">
+              <label class="label">City</label>
+              <div class="control">
+                <div class="select">
+                    <select name="city" class="cities order-alpha" id="cityId">
+                        <option value="">Select City</option>
+                    </select>
+                </div>
+              </div>
+            </div>
+          
+          <div class="field is-grouped">
+            <div class="control">
+              <button class="button is-info">Submit</button>
+            </div>
+            <div class="control">
+              <button class="button is-dark">Cancel</button>
+            </div>
+          </div>
+    </div>
+
+
+
+<div style="text-align: center; background-color: #232a34; padding: 5px;">
+        <a href=""> <h3 class="title is-3" style="color: white;">&copy; Phoenix</h3></a>
+</div>
+     
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<script src="//geodata.solutions/includes/statecity.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+</html>
