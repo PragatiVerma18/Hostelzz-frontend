@@ -27,8 +27,8 @@
 @media screen and (max-width: 720px) {
 .card{
   margin: 40px !important;
-  box-shadow: 5px 10px 8px #f3f3f3;
-  border-radius: 20px;
+  box-shadow: 2px 4px 7px #a5a5aa;
+  border-radius: 10px;
 }
 
 .card:hover{
@@ -50,4 +50,57 @@
 .register label, .login label{
   margin-top: 5px;
 
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 12px !important;
+  padding: 10px !important;
+}
+.description{
+  overflow-x: hidden !important;
+}
+.location{
+  border:  1.5px solid #209cee;
+}
+.list-item{
+  margin-bottom: 30px !important;
+}
+.text{
+  margin: 20px !important;
+}
+
+progress.show-value {
+  position: relative;
+  color: white !important;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+progress.show-value:after {
+  content: attr(value)'%';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  font-size: calc(1rem / 1.5);
+  line-height: 1rem;
+}
+
+progress.show-value.is-small:after {
+  font-size: calc(0.75rem / 1.5);
+  line-height: 0.75rem;
+}
+
+progress.show-value.is-medium:after {
+  font-size: calc(1.25rem / 1.5);
+  line-height: 1.25rem;
+}
+
+progress.show-value.is-large:after {
+  font-size: calc(1.5rem / 1.5);
+  line-height: 1.5rem;
 }
